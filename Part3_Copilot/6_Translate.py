@@ -37,3 +37,17 @@ translations = {
     "sun": "soare"
 }
 
+
+word = ""  
+
+while word != "exit":
+    word = input("Word: ")
+    
+    if word == "exit":
+        print("Goodbye!")
+        break
+    
+    if word in translations:
+        print(translations[word])
+    else:
+        print("Word not found")

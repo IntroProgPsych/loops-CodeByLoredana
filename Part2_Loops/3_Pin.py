@@ -20,3 +20,13 @@
 
 
 # Write your code here:
+
+pin = input("Type in tour pin code : ")
+attempt = 0
+while pin != "4321":
+    print("Wrong!")
+    pin = input("Type in tour pin code : " )
+    attempt = attempt + 1
+
+print(f"Correct!")
+print(f"You did {attempt} attempts")
